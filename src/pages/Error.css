@@ -1,0 +1,25 @@
+.error-section {
+  background-image: url("../assets/error.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  gap: 20px;
+  text-align: center;
+}
+
+.error-title {
+  color: var(--body-color);
+  font-size: 100px;
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+}
+
+.error-subtitle {
+  color: var(--body-color);
+  font-size: 50px;
+}

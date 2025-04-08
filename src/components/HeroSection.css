@@ -1,0 +1,39 @@
+.hero-section {
+  position: relative;
+  height: calc(100vh - 70px);
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  color: var(--body-color);
+  padding: 20px;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 70px;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  margin-bottom: 30px;
+}

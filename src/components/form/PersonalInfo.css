@@ -1,0 +1,72 @@
+article {
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-info {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+
+form {
+  width: 60%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.row input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input {
+  height: 50px;
+}
+
+textarea {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  min-height: 220px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.submit-button {
+  background-color: var(--main-color);
+  border-radius: 8px;
+  align-self: flex-start;
+  padding: 10px 20px;
+  color: var(--body-color);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: var(--body-color);
+  text-transform: uppercase;
+}
+
+.submit-button:hover {
+  filter: brightness(90%);
+}
