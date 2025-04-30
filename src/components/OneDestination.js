@@ -1,5 +1,5 @@
 import React from "react";
-import "./OneDestination.css";
+import "../styles/oneDestination.css";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { FaTemperatureHigh } from "react-icons/fa";
@@ -8,24 +8,18 @@ const OneDestination = (props) => {
   const [temperature, setTemperature] = useState(null);
 
   useEffect(() => {
-    const API_KEY = "673d162970c5647bf2cc7f57f36b73e7";
-    // const cityName = props.city;
+    const apiKey = process.env.REACT_APP_API_KEY;
     const cityName = `${props.city}, ${props.countryCode}`;
 
     const fetchTemperature = async () => {
       try {
         const response = await fetch(
-          `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${API_KEY}`
+          `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${apiKey}`
         );
         const data = await response.json();
-
-        if (data?.main?.temp !== undefined) {
-          setTemperature(Math.round(data.main.temp));
-        } else {
-          setTemperature("N/A");
-        }
+        setTemperature(data?.main?.temp ? Math.round(data.main.temp) : "N/A");
       } catch (error) {
-        console.error("Chyba při načítání počasí:", error);
+        console.error("Chyba při načítání", error);
         setTemperature("N/A");
       }
     };

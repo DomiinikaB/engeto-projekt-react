@@ -1,5 +1,5 @@
 import React from "react";
-import "./Questions.css";
+import "../styles/questions.css";
 import OneQuestion from "./OneQuestion";
 import questions from "../assets/questions";
 import { Link } from "react-router-dom";

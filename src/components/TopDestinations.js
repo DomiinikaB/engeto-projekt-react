@@ -1,5 +1,5 @@
 import React from "react";
-import "./TopDestinations.css";
+import "../styles/topDestinations.css";
 import OneDestination from "./OneDestination";
 import { Link } from "react-router-dom";
 import destinations from "../assets/data";

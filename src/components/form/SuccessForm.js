@@ -1,5 +1,5 @@
 import React from "react";
-import "./SuccessForm.css";
+import "../../styles/successForm.css";
 import { Link } from "react-router-dom";
 import { BsEnvelopePaperHeart } from "react-icons/bs";
 

@@ -1,10 +1,18 @@
 import React from "react";
-import MainForm from "../components/form/MainForm";
+import { useState } from "react";
+import PersonalInfo from "../components/form/PersonalInfo";
+import SuccessForm from "../components/form/SuccessForm";
 
 const Contact = () => {
+  const [step, setStep] = useState(1);
+
+  const handleStep = () => {
+    setStep(step + 1);
+  };
   return (
     <section>
-      <MainForm />
+      {step === 1 && <PersonalInfo next={handleStep} />}
+      {step === 2 && <SuccessForm />}
     </section>
   );
 };

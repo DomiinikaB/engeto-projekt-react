@@ -1,5 +1,5 @@
 import React from "react";
-import "./PersonalInfo.css";
+import "../../styles/personalInfo.css";
 import { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 
